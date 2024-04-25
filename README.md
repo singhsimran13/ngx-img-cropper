@@ -6,7 +6,7 @@ Upgarded version of ngx-image-cropper "7.2.1" visit [github](https://github.com/
 [StackBlitz](https://stackblitz.com/edit/image-cropper)
 
 ### Installation
-`npm install @ghostdev13/image-cropper --save`
+`npm install @ghostdev13/img-cropper --save`
 
 ### Upgrade instructions
 For a list of breaking changes and update instructions, go to [releases](https://github.com/singhsimran13/ngx-img-cropper/releases).
