@@ -1,0 +1,45 @@
+{
+  "name": "ngx-img-cropper-workspace",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "start:lib": "ng build ngx-img-cropper --watch",
+    "build": "ng build",
+    "build:lib": "ng build ngx-img-cropper",
+    "publish:lib": "npm run build:lib && npm run copy:files && npm publish ./dist/ngx-img-cropper",
+    "pack:lib": "npm pack ./projects/ngx-img-cropper",
+    "test": "ng test ngx-img-cropper",
+    "test:ci": "ng test ngx-img-cropper --bail",
+    "lint": "ng lint",
+    "copy:files": "cp ./README.md ./dist/ngx-img-cropper && cp ./LICENSE ./dist/ngx-img-cropper"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "~13.3.11",
+    "@angular/common": "~13.3.11",
+    "@angular/compiler": "~13.3.11",
+    "@angular/core": "~13.3.11",
+    "@angular/forms": "~13.3.11",
+    "@angular/platform-browser": "~13.3.11",
+    "@angular/platform-browser-dynamic": "~13.3.11",
+    "@angular/router": "~13.3.11",
+    "rxjs": "~7.4.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.11.4"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~13.3.9",
+    "@angular/cli": "~13.3.9",
+    "@angular/compiler-cli": "~13.3.11",
+    "@types/node": "^12.11.1",
+    "typescript": "~4.5.2",
+    "@angular-builders/jest": "^13.0.2",
+    "@angular/language-service": "~13.3.11",
+    "@types/jest": "^27.4.0",
+    "hammerjs": "^2.0.8",
+    "@types/hammerjs": "^2.0.41",
+    "jest": "^27.4.7",
+    "ng-packagr": "^13.1.2"
+  }
+}
