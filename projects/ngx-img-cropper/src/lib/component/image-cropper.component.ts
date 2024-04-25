@@ -96,7 +96,7 @@ export class ImageCropperComponent implements OnChanges, OnInit {
   @Input() alignImage: 'left' | 'center' = this.settings.alignImage;
   @HostBinding('class.disabled')
   @Input() disabled = false;
-  @HostBinding('class.dev-ix-hidden')
+  @HostBinding('class.ngx-ix-hidden')
   @Input() hidden = false;
 
   @Output() imageCropped = new EventEmitter<ImageCroppedEvent>();
@@ -326,7 +326,7 @@ export class ImageCropperComponent implements OnChanges, OnInit {
       hammer.on('pinchend', this.pinchStop.bind(this));
       hammer.on('pinchstart', this.startPinch.bind(this));
     } else if (isDevMode()) {
-      console.warn('[devImageCropper] Could not find HammerJS - Pinch Gesture won\'t work');
+      console.warn('[ngxImageCropper] Could not find HammerJS - Pinch Gesture won\'t work');
     }
   }
 
